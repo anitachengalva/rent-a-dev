@@ -1,3 +1,4 @@
+// import new logo
 import logo from './logo.svg';
 import './App.css';
 
