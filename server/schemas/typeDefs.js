@@ -15,7 +15,7 @@ const typeDefs = gql`
     requestText: String
     requestAuthor: String
     createdAt: String
-    skills: [Comment]!
+    skills: [Skill]!
   }
 
   type Skill {
@@ -31,18 +31,18 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    thoughts(username: String): [Thought]
-    thought(thoughtId: ID!): Thought
+    skills(username: String): [Skill]
+    skill(skillId: ID!): Skill
     me: User
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addThought(thoughtText: String!): Thought
-    addComment(thoughtId: ID!, commentText: String!): Thought
-    removeThought(thoughtId: ID!): Thought
-    removeComment(thoughtId: ID!, commentId: ID!): Thought
+    addRequest(requestText: String!): Request
+    addSkill(skillId: ID!, skillType: String!): Skill
+    removeRequest(requestId: ID!): Request
+    removeSkill(skillId: ID!): Skill
   }
 `;
 
