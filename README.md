@@ -1,70 +1,89 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rent-A-Dev 💵💻
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Description needs to be refined...
 
-### `npm start`
+It is a full-stack MERN application ([MongoDB](https://www.mongodb.com/)-[Express.js](https://expressjs.com/)-[React](https://reactjs.org/)-[Node.js](https://nodejs.org/en/)), deployed to [Heroku](https://www.heroku.com/what) with a [MongoDB](https://www.mongodb.com/) database using [MongoDB Atlas](https://www.mongodb.com/atlas/database). It utilizes [GraphQL API](https://graphql.org/learn/) with [Apollo Server](https://www.apollographql.com/docs/apollo-server/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Links
 
-### `npm test`
+Deployment through [Heroku](https://www.heroku.com/what).
+> ***[Click Me for Deployed Application](https://github.com/anitachengalva/rent-a-dev)***
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+GitHub Repository
+> ***[Click Me for Code](https://github.com/anitachengalva/rent-a-dev)***
 
-### `npm run build`
+Google Doc
+> ***[Click Me for Brainstorming](https://docs.google.com/document/d/1n95KZjIO0La4RVj4La1LetiQvPSswujJWH56RR-e9so/edit?usp=sharing)***
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Figma Wireframe
+> ***[Click Me for Site Planning](https://www.figma.com/file/HOecaAnRYBYwTdI1wXuil8/Untitled?node-id=0%3A1)***
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Table of Contents
 
-### `npm run eject`
+- [User Story](#user-story)
+- [Installation and Usage](#installation-and-usage)
+- [Technologies Utilized](#technologies-utilized)
+- [Screenshots and Walkthrough](#screenshots-and-walkthrough)
+- [Contributors](#contributors)
+- [License](#license)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## User Story
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```md
+AS A ____________
+I WANT _______________
+SO THAT _____________
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Installation and Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In order to run this application, you will want to `git clone` this repository so that the code is on your local machine. Run `npm i` while in the root directory in order to install all necessary [Node.js](https://nodejs.org/en/) dependencies. Then run `npm start` to launch the server.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application is hosted at Port 3001, so typing: `http://localhost:3001/` into the address bar of your browser (while the server is running) should display the user interface.
 
-### Code Splitting
+Alternatively, you can simply visit my [Deployed Link]().
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Utilized
 
-### Analyzing the Bundle Size
+> [Javascript](https://www.javascript.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> [MongoDB](https://www.mongodb.com/)
 
-### Making a Progressive Web App
+> [Express.js](https://expressjs.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> [React](https://reactjs.org/)
 
-### Advanced Configuration
+> [Node.js](https://nodejs.org/en/)
+> - [Mongoose npm](https://www.npmjs.com/package/mongoose)
+> - [Express.js npm](https://www.npmjs.com/package/express)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> [GraphQL API](https://graphql.org/learn/)
+> - [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 
-### Deployment
+## Screenshots and Walkthrough
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Alt-txt-placeholder](path-placeholder)
+*caption*
+</br>
 
-### `npm run build` fails to minify
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for checking out our project!
+
+This application was made by [Anita Chengalva](https://github.com/anitachengalva), [Cameron Buss](https://github.com/camnb97), [Trentyn Powell](https://github.com/trentynp), [Nikolas Mazur](https://github.com/NikolasMazur) & [Zane Pisano](https://github.com/Pisanoz).
+
+If you would like to see more of our individual work, please click on a name to be taken to the contributor's GitHub.
+
+
+## License
+
+This project is licensed under the MIT License &nbsp; &nbsp; &nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+Please click on the green MIT License Shield above to learn more about what the limitations of this license are.
