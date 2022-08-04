@@ -31,8 +31,8 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    skills(username: String): [Skill]
-    skill(skillId: ID!): Skill
+    requests(username: String): [Request]
+    request(skillId: ID!): Request
     me: User
   }
 
@@ -41,8 +41,10 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     addRequest(requestText: String!): Request
     addSkill(skillId: ID!, skillType: String!): Skill
+    addUserSkill(userId: ID!, skillType: String!): Skill
     removeRequest(requestId: ID!): Request
     removeSkill(skillId: ID!): Skill
+    removeUserSkill(userId: ID!, skillId: String!): Skill
   }
 `;
 
