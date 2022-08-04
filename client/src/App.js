@@ -35,7 +35,7 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloClient client={client}>
+    <ApolloProvider client={client}>
     <div className="App">
       <Homepage></Homepage>
       {/* <header className="App-header">
@@ -53,7 +53,7 @@ function App() {
         </a>
       </header> */}
     </div>
-    </ApolloClient>
+    </ApolloProvider>
   );
 }
 
