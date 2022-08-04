@@ -2,6 +2,7 @@
 // import logo from './logo.svg';
 import Homepage from "./components/homepage";
 import './App.css';
+import './index.css'
 
 function App() {
   return (
