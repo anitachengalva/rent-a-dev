@@ -11,9 +11,9 @@ function Homepage() {
                     {/* <Image src={logo} /> */}
                     Rent-A-Dev
                 </Menu.Item>
-                <Menu.Item position="right" >Profile</Menu.Item>
-                <Menu.Item>Jobs</Menu.Item>
-                <Menu.Item>Settings</Menu.Item>
+                <Menu.Item position="right" >Log In</Menu.Item>
+                <Menu.Item>Sign Up</Menu.Item>
+                <Menu.Item>Profile</Menu.Item>
             </Menu>
         </div>
 

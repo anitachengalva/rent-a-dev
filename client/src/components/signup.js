@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, Button, Segment, Grid } from 'semantic-ui-react';
-import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
+import Homepage from './homepage';
 
 function SignUp() {
 

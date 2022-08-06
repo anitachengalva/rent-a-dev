@@ -1,12 +1,13 @@
 import React from 'react'
 import { Form, Button, Segment, Grid } from 'semantic-ui-react';
-import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
+import Homepage from './homepage';
+
 
 function Login() {
 
     return (
         <div>
-            <Header></Header>
+            <Homepage></Homepage>
             <Grid>
                 <Grid.Column style={{ maxWidth: 550, marginTop: 20 }}>
                     Login Here
@@ -25,7 +26,6 @@ function Login() {
                     </Form>
                 </Segment>
             </Grid>
-
         </div >
 
     );
