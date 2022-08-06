@@ -9,7 +9,8 @@ function Login() {
         <div>
             <Header></Header>
             <Grid>
-                <Segment className="ui two column centered grid" style={{ width: 550, marginTop: 20 }} >
+                <Segment className="ui two column centered grid" style={{ width: 550, marginTop: 50 }} >
+                    <h2>Login In Here</h2>
                     <Form className="column" >
                         <Form.Field>
                             <Form.Input placeholder="Username" label="Username" />
@@ -18,8 +19,8 @@ function Login() {
                             <Form.Input placeholder="Password" label="Password" />
                         </Form.Field>
                         <Button fluid type="submit">Login</Button>
-                        <h2>Don't have an account? sign up here</h2>
-                        <Button fluid type="submit">Sign Up</Button>
+                        <p>Don't have an account?</p>
+                        <Button fluid type="submit" href="/signup" >Sign Up</Button>
                     </Form>
                 </Segment>
             </Grid>
