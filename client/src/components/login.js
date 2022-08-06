@@ -1,19 +1,16 @@
 import React from 'react'
 import { Form, Button, Segment, Grid } from 'semantic-ui-react';
-import Homepage from './homepage';
 
+import Header from './header';
 
 function Login() {
 
     return (
         <div>
-            <Homepage></Homepage>
+            <Header></Header>
             <Grid>
-                <Grid.Column style={{ maxWidth: 550, marginTop: 20 }}>
-                    Login Here
-                </Grid.Column>
-                <Segment>
-                    <Form>
+                <Segment className="ui two column centered grid" style={{ width: 550, marginTop: 20 }} >
+                    <Form className="column" >
                         <Form.Field>
                             <Form.Input placeholder="Username" label="Username" />
                         </Form.Field>
