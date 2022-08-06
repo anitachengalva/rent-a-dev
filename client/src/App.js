@@ -8,9 +8,9 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 import 'semantic-ui-css/semantic.min.css';
-// import Homepage from "./components/homepage";
+import Homepage from "./components/homepage";
 // import Modal from './components/modal';
-import RegisterUI from './components/register';
+import Login from './components/login';
 import './App.css';
 import './index.css'
 
@@ -40,7 +40,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <RegisterUI></RegisterUI>
+        <Login></Login>
 
         {/* <Modal></Modal> */}
         {/* <Homepage></Homepage> */}

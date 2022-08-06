@@ -4,17 +4,20 @@ import { Menu } from "semantic-ui-react";
 
 function Homepage() {
     return (
-        <Menu>
+        <div>
+            <Menu>
 
-            <Menu.Item style={{ fontSize: 26 }}>
-                {/* <Image src={logo} /> */}
-                Rent-A-Dev
-            </Menu.Item>
-            <Menu.Item position="right" >Profile</Menu.Item>
-            <Menu.Item>Jobs</Menu.Item>
-            <Menu.Item>Settings</Menu.Item>
-        </Menu>
+                <Menu.Item style={{ fontSize: 26 }}>
+                    {/* <Image src={logo} /> */}
+                    Rent-A-Dev
+                </Menu.Item>
+                <Menu.Item position="right" >Profile</Menu.Item>
+                <Menu.Item>Jobs</Menu.Item>
+                <Menu.Item>Settings</Menu.Item>
+            </Menu>
+        </div>
+
     );
 }
 
-// export default Homepage;
+export default Homepage;
