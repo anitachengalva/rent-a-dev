@@ -6,9 +6,11 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-// import new logo
-// import logo from './logo.svg';
-import Homepage from "./components/homepage";
+
+import 'semantic-ui-css/semantic.min.css';
+// import Homepage from "./components/homepage";
+// import Modal from './components/modal';
+import RegisterUI from './components/register';
 import './App.css';
 import './index.css'
 
@@ -37,23 +39,12 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-    <div className="App">
-      <Homepage></Homepage>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+      <div className="App">
+        <RegisterUI></RegisterUI>
+
+        {/* <Modal></Modal> */}
+        {/* <Homepage></Homepage> */}
+      </div>
     </ApolloProvider>
   );
 }

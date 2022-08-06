@@ -1,30 +1,20 @@
 import React from "react";
-// import logo1 from "./image/logo_black_bg";
-
-var style = {
-    div: {
-        "height": "500px",
-        "backgroundColor": "black",
-    }
-}
+import { Menu } from "semantic-ui-react";
+// import logo from "./image/logo_black_bg"
 
 function Homepage() {
     return (
-        <div>
-            <h1>
-                {/* <img src={logo1} className="App-logo" alt="logo" /> */}
-                Hey guys! I'm a header!</h1>
-            <h2>h2</h2>
-            <ul>
-                <li>ii1</li>
-                <li>li2</li>
-                <li>li3</li>
-            </ul>
-            <div style={style.div} >
+        <Menu>
 
-            </div>
-        </div>
+            <Menu.Item style={{ fontSize: 26 }}>
+                {/* <Image src={logo} /> */}
+                Rent-A-Dev
+            </Menu.Item>
+            <Menu.Item position="right" >Profile</Menu.Item>
+            <Menu.Item>Jobs</Menu.Item>
+            <Menu.Item>Settings</Menu.Item>
+        </Menu>
     );
 }
 
-export default Homepage;
+// export default Homepage;
