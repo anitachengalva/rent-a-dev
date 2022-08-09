@@ -40,6 +40,6 @@ const requestSchema = new Schema({
 	],
 });
 
-const Requests = model("Request", requestSchema);
+const Request = model("Request", requestSchema);
 
-module.exports = Requests;
+module.exports = Request;

@@ -1,0 +1,73 @@
+[
+    {
+      "username": "Brian Kernighan",
+      "email": "bkernighan@techfriends.dev",
+      "password": "password01",
+      "skills": "HTML, CSS, React",
+      "request": ""
+    },
+    {
+        "username": "Helene Lowery",
+        "email": "helenelowery@techfriends.dev",
+        "password": "password02",
+        "skills": "NodeJS, SQL",
+        "request": ""
+    },
+    {
+        "username": "Betty Howell",
+        "email": "bettyhowell@techfriends.dev",
+        "password": "password03",
+        "skills": "MongoDB, JavaScript",
+        "request": ""
+    },
+    {
+        "username": "Mariano Mullen",
+        "email": "marianomullen@techfriends.dev",
+        "password": "password04",
+        "skills": "CSS, Bootstrap",
+        "request": ""
+    },
+    {
+        "username": "Bryce Fernandez",
+        "email": "brycefernandez@techfriends.dev",
+        "password": "password05",
+        "skills": "JavaScript",
+        "request": ""
+    },
+    {
+        "username": "Ulysses Sawyer",
+        "email": "ulyssessawyer@techfriends.dev",
+        "password": "password06",
+        "skills": "Python, JavaScript, CSS",
+        "request": ""
+    },
+    {
+        "username": "Willard Bridges",
+        "email": "willardbridges@techfriends.dev",
+        "password": "password07",
+        "skills": "C++, C#",
+        "request": ""
+    },
+    {
+        "username": "Herman Rogers",
+        "email": "hermanrogers@techfriends.dev",
+        "password": "password08",
+        "skills": "TypeScript, JavaScript",
+        "request": ""
+    },
+    {
+        "username": "Bobby Meza",
+        "email": "bobbymeza@techfriends.dev",
+        "password": "password09",
+        "skills": "HolyC",
+        "request": ""
+    },
+    {
+        "username": "Vera Wolfe",
+        "email": "verawolfe@techfriends.dev",
+        "password": "password10",
+        "skills": "",
+        "request": ""
+    }
+  ]
+  
