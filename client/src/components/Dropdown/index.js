@@ -17,6 +17,7 @@ function Drop() {
         {Skill: 'SQL', id: 8},
         {Skill: 'Git', id: 9},
     ]
+    const [options] = useState(data);
     return (
         <select>
             <option selected value="Default">Select Skills</option>
