@@ -1,4 +1,3 @@
-// currently working on this - DO NOT EDIT
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Request, Skill } = require('../models');
 const { signToken } = require('../utils/auth');

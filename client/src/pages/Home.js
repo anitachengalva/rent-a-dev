@@ -1,37 +1,26 @@
-
-// this is just copied from wek21act26
-
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import ThoughtList from '../components/ThoughtList';
-import ThoughtForm from '../components/ThoughtForm';
+import { } from 'semantic-ui-react'
 
-import { QUERY_THOUGHTS } from '../utils/queries';
+import { } from '../utils/queries';
+import { } from '../utils/mutations';
 
 const Home = () => {
+
+    //this was copied _________________________________
+    // which mutations will be displayed on the hmepage? 
+    // -users snippets, skills dropdown, "welcome <user name>", 
     const { loading, data } = useQuery(QUERY_THOUGHTS);
     const thoughts = data?.thoughts || [];
+    // ________________________________________________
 
     return (
         <main>
-            <div className="flex-row justify-center">
-                <div
-                    className="col-12 col-md-10 mb-3 p-3"
-                    style={{ border: '1px dotted #1a1a1a' }}
-                >
-                    <ThoughtForm />
-                </div>
-                <div className="col-12 col-md-8 mb-3">
-                    {loading ? (
-                        <div>Loading...</div>
-                    ) : (
-                        <ThoughtList
-                            thoughts={thoughts}
-                            title="Some Feed for Thought(s)..."
-                        />
-                    )}
-                </div>
+            <div>
+                <h3>search bar</h3>
+                <h3>dropdown for searchable skills</h3>
+                <h3> here will be the snippets of the devs profiles you can scroll through</h3>
             </div>
         </main>
     );
