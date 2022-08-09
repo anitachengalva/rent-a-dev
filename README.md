@@ -78,8 +78,6 @@ Alternatively, you can simply visit my [Deployed Link]().
 > - [jsonwebtoken npm](https://www.npmjs.com/package/jsonwebtoken)
 > - [jwt-decode](https://www.npmjs.com/package/jwt-decode)
 > - [react npm](https://www.npmjs.com/package/react)
-> - [react-dom npm](https://www.npmjs.com/package/react)
-> - [react-router-dom npm](https://www.npmjs.com/package/react-router-dom)
 
 > [GraphQL API](https://graphql.org/learn/)
 > - [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
