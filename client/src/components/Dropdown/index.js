@@ -1,4 +1,3 @@
-// App.js imports
 import React, { useState } from "react";
 import { Multiselect } from "multiselect-react-dropdown";
 import ReactDOM from "react-dom";
@@ -6,7 +5,10 @@ import ReactDOM from "react-dom";
 import "../../App.css";
 // when moving to actual app.js, mind filepath for css
 
-function App() {
+function Drop() {
+    const data = [
+        {Skill: 'HTML', id: 1},
+    ]
     return (
         <select>
             <option selected value="Default">Select Skills</option>
@@ -29,4 +31,4 @@ function App() {
     );
 };
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+export default Drop;
