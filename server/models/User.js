@@ -21,14 +21,13 @@ const userSchema = new Schema({
 	},
 	Skills: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: "Skills",
+			type: string,
 		},
 	],
 	Request: [
 		{
 			type: Schema.Types.ObjectId,
-			ref: "Requests",
+			ref: "Request",
 		},
 	],
 });

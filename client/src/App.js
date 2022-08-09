@@ -6,11 +6,18 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  // Link
+} from "react-router-dom";
 import 'semantic-ui-css/semantic.min.css';
-import Homepage from "./components/homepage";
-// import Modal from './components/modal';
+
+import Homepage from './components/homepage';
+import Header from './components/Header';
 import Login from './components/login';
+import SignUp from './pages/Signup';
 import './App.css';
 import './index.css'
 
@@ -40,10 +47,16 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <Login></Login>
+        <Header></Header>
 
-        {/* <Modal></Modal> */}
-        {/* <Homepage></Homepage> */}
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Homepage />}></Route>
+            <Route exact path="/login" element={<Login />}></Route>
+            <Route exact path="/signup" element={<SignUp />}></Route>
+          </Routes>
+        </Router>
+
       </div>
     </ApolloProvider>
   );
