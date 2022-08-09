@@ -2,13 +2,14 @@ import React from "react";
 import { Menu } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 
+import image from "../../image/logo_black_bg"
 function Header() {
     return (
         <div>
             <Menu>
 
                 <Menu.Item style={{ fontSize: 26 }}>
-                    {/* <Image src={logo} /> */}
+                    <Image src={image} />
                     Rent-A-Dev
                 </Menu.Item>
                 <Menu.Item position="right" >

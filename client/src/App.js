@@ -10,14 +10,14 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 import 'semantic-ui-css/semantic.min.css';
 
 import Homepage from './components/homepage';
-import Header from './components/header';
+import Header from './components/Header';
 import Login from './components/login';
-import SignUp from './components/signup';
+import SignUp from './pages/Signup';
 import './App.css';
 import './index.css'
 
@@ -47,8 +47,9 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
+        <Header></Header>
+
         <Router>
-          <Header></Header>
           <Routes>
             <Route exact path="/" element={<Homepage />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
