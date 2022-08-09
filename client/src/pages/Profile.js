@@ -1,5 +1,5 @@
 
-// this is just copied from wk21act26
+// this is mostly copied from wk21act26
 
 import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
@@ -12,6 +12,7 @@ import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
 
+import { } from 'semantic-ui-react';
 
 const Profile = () => {
     const { username: userParam } = useParams();
@@ -23,6 +24,7 @@ const Profile = () => {
     const user = data?.me || data?.user || {};
     // navigate to personal profile page if username is yours
     if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
+        // naviagte to something different?
         return <Navigate to="/me" />;
     }
 
