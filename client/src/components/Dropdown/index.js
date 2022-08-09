@@ -21,10 +21,12 @@ function DropMenu() {
   return (
     // css - please integrate into app.css
     <div style={{ width: "90%", justifyContent: "center", display: "flex" }}>
-      <div className="DropMenu"></div>
-
+      <div className="DropMenu">
+        <h3 style={{color:"green"}}>Please Select Skills</h3>
+        <Multiselect options={options} displayValue={Skill} />
+      </div>
     </div>
-    // closing div seals css
+    // closing div seals css, can remove once css is integrated
   );
 }
 
