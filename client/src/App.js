@@ -47,9 +47,10 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <Header></Header>
+
 
         <Router>
+          <Header></Header>
           <Routes>
             <Route exact path="/" element={<Homepage />}></Route>
             <Route exact path="/login" element={<Login />}></Route>

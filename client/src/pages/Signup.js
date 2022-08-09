@@ -57,14 +57,14 @@ const SignUp = () => {
                                 <Form.Input
                                     //i think Form might be a semanticui thing but maybe it needs ot be formState
                                     value={formState.firstName || ""}
-                                    onChange={handleChange}
+                                    // onChange={handleChange}
                                     name="firstName"
                                     label="First Name" />
                             </Form.Field>
                             <Form.Field>
                                 <Form.Input
                                     value={formState.lastName || ""}
-                                    onChange={handleChange}
+                                    // onChange={handleChange}
                                     name="lastName"
                                     label="Last Name" />
                             </Form.Field>
@@ -86,7 +86,7 @@ const SignUp = () => {
                             </Form.Field>
                             <Form.Field>
                                 <Form.Input
-                                    value={Form.password || ""}
+                                    value={formState.password || ""}
                                     onChange={handleChange}
                                     type="password"
                                     name="password"
