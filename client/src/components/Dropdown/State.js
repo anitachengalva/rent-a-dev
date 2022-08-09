@@ -1,3 +1,4 @@
+// USES STATE - if SemanticUI ver works, del this
 import React, { useState } from "react";
 import { Multiselect } from "multiselect-react-dropdown";
 import ReactDOM from "react-dom";
@@ -23,10 +24,11 @@ function DropMenu() {
     <div style={{ width: "90%", justifyContent: "center", display: "flex" }}>
       <div className="DropMenu">
         <h3 style={{color:"green"}}>Please Select Skills</h3>
-        <Multiselect options={options} displayValue={Skill} />
+        <Multiselect options={options} displayValue="Skill" />
       </div>
     </div>
-    // closing div seals css, can remove once css is integrated
+    // closing div seals css, can remove div once css is integrated
+    // unsure how to pass data back to user profile or requests
   );
 }
 
