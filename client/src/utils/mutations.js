@@ -9,15 +9,13 @@ export const ADD_USER = gql`
       username
       email
       password
-      skills {
-        _id
-        skillType
-      }
     }
     token
   }
 }
 `;
+//add skills back in
+
 
 export const ADD_LOGIN = gql`
   mutation createLogin($email: String!, $password: String!) {

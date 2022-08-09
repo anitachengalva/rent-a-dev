@@ -10,8 +10,8 @@ function Header() {
             <Menu>
 
                 <Menu.Item style={{ fontSize: 26 }}>
-                    <img src={image} />
-                    <NavLink to="/">rent-a-dev</NavLink>
+
+                    <NavLink to="/"><img src={image}></img></NavLink>
                 </Menu.Item>
                 <Menu.Item position="right" >
                     <NavLink to="/login">Log In</NavLink>
