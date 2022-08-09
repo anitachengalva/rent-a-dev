@@ -1,5 +1,10 @@
-import React from "react";
+// App.js imports
+import React, { useState } from "react";
+import { Multiselect } from "multiselect-react-dropdown";
 import ReactDOM from "react-dom";
+
+import "../../App.css";
+// when moving to actual app.js, mind filepath for css
 
 function App() {
     return (
