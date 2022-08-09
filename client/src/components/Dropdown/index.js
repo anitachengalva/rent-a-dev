@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 function App() {
     return (
         <select>
+            <option selected value="Default">Select Skills</option>
             <option value="HTML">HTML</option>
             <option value="CSS">CSS</option>
             <option value="Javascript">Javascript</option>
