@@ -8,6 +8,14 @@ import "../../App.css";
 function Drop() {
     const data = [
         {Skill: 'HTML', id: 1},
+        {Skill: 'CSS', id: 2},
+        {Skill: 'Javascript', id: 3},
+        {Skill: 'Node', id: 4},
+        {Skill: 'React', id: 5},
+        {Skill: 'Express', id: 6},
+        {Skill: 'MongoDB', id: 7},
+        {Skill: 'SQL', id: 8},
+        {Skill: 'Git', id: 9},
     ]
     return (
         <select>
