@@ -14,8 +14,8 @@ import {
 } from "react-router-dom";
 import 'semantic-ui-css/semantic.min.css';
 
-import Homepage from './components/homepage';
-import Header from './components/Header';
+import Header from './components/Header/index'
+import Home from './pages/Home';
 import Login from './components/login';
 import SignUp from './pages/Signup';
 import './App.css';
@@ -52,7 +52,7 @@ function App() {
         <Router>
           <Header></Header>
           <Routes>
-            <Route exact path="/" element={<Homepage />}></Route>
+            <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
             <Route exact path="/signup" element={<SignUp />}></Route>
           </Routes>
