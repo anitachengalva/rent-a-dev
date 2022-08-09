@@ -1,29 +1,26 @@
 import React from "react";
-import { Menu } from "semantic-ui-react";
-import { NavLink } from "react-router-dom";
+import ReactDOM from "react-dom";
 
-import image from "../../image/logo_black_bg.png"
-
-function Header() {
+function App() {
     return (
-        <div>
-            <Menu>
-
-                <Menu.Item style={{ fontSize: 26 }}>
-                    <img src={image}></img>
-                    <NavLink to="/">rent a dev</NavLink>
-                </Menu.Item>
-                <Menu.Item position="right" >
-                    <NavLink to="/login">Log In</NavLink>
-                </Menu.Item>
-                <Menu.Item>
-                    <NavLink to="/signup">Sign Up</NavLink >
-                </Menu.Item>
-                <Menu.Item>Profile</Menu.Item>
-            </Menu>
-        </div>
-
+        <select>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="PHP">PHP</option>
+            <option value="C#">C#</option>
+            <option value="Node">Node</option>
+            <option value="Yarn">Yarn</option>
+            <option value="React">React</option>
+            <option value="Servers">Servers</option>
+            <option value="APIs">APIs</option>
+            <option value="Git">Git</option>
+            <option value="SQL">SQL</option>
+            <option value="MongoDB">MongoDB</option>
+        </select>
     );
-}
+};
 
-export default Header;
+ReactDOM.render(<App />, document.querySelector('#root'));
