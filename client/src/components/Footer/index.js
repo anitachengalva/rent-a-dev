@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Footer = () => {
+export function Footer() {
+	useEffect(() => {
+		const script = document.createElement("script");
+
+		script.src = "https://platform.linkedin.com/badges/js/profile.js";
+		script.async = true;
+		script.defer = true;
+
+		document.body.appendChild(script);
+
+		return () => {
+			document.body.removeChild(script);
+		};
+	}, []);
 	return (
 		<footer className="">
 			<div className="">
@@ -73,6 +86,4 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-};
-
-export default Footer;
+}
