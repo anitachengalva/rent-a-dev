@@ -18,7 +18,7 @@ import Header from './components/Header/index'
 import Home from './pages/Home';
 import Login from './pages/Login';
 import SignUp from './pages/Signup';
-import Profile from './pages/Profile';
+// import Profile from './pages/Profile';
 import './App.css';
 import './index.css'
 
@@ -56,7 +56,7 @@ function App() {
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
             <Route exact path="/signup" element={<SignUp />}></Route>
-            <Route exact path="/profile" element={<Profile />}></Route>
+            {/* <Route exact path="/profile" element={<Profile />}></Route> */}
 
           </Routes>
         </Router>
