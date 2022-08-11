@@ -1,7 +1,8 @@
 import React from 'react';
 // import { useQuery } from '@apollo/client';
 
-import { } from 'semantic-ui-react'
+import { } from 'semantic-ui-react';
+import Snippet from '../components/Snippet/index';
 
 // import { QUERY_REQUEST } from '../utils/queries';
 // import { } from '../utils/mutations';
@@ -20,10 +21,10 @@ const Home = () => {
     return (
         <main>
             <div>
-                <h3>search bar</h3>
                 <h3>dropdown for searchable skills</h3>
-                <h3> here will be the snippets of the devs profiles you can scroll through</h3>
+
             </div>
+            <Snippet></Snippet>
         </main>
     );
 };

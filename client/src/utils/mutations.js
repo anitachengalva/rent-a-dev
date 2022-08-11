@@ -18,8 +18,8 @@ export const ADD_USER = gql`
 //add skills back in
 
 export const ADD_LOGIN = gql`
-  mutation createLogin($email: String!, $password: String!) {
-    createLogin(email: $email, password: $password) {
+  mutation login($email: String!, $password: String!) {
+    login(email: $email, password: $password) {
       _id
       email
       password
