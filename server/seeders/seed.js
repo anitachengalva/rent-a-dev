@@ -1,20 +1,31 @@
 const db = require('../config/connection');
-const { Skill } = require('../models');
+const { User, Request } = require('../models');
+const userSeeds = require('./userSeeds.json');
+const requestSeeds = require('./requestSeeds.json');
 
 db.once('open', async () => {
+  try {
+    await Request.deleteMany({});
+    await User.deleteMany({});
 
-  await Skill.deleteMany();
+    await User.create(userSeeds);
 
-  const skills = await Skill.insertMany([
-    { skills: 'HTML' },
-    { skills: 'CSS' },
-    { skills: 'JavaScript' },
-    { skills: 'React' },
-    { skills: 'GraphQL' },
-    { skills: 'Node' }
-  ]);
+    for (let i = 0; i < requestSeeds.length; i++) {
+      const { _id, requestSender } = await Request.create(requestSeeds[i]);
+      const user = await User.findOneAndUpdate(
+        { username: requestSender },
+        {
+          $addToSet: {
+            Request: _id,
+          },
+        }
+      );
+    }
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
 
-  console.log('Sucessfully seeded skills');
-
-  process.exit();
+  console.log('Successfully seeded');
+  process.exit(0);
 });
