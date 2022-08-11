@@ -53,8 +53,8 @@ function App() {
           <Header></Header>
           <Routes>
             <Route exact path="/" element={<Homepage />}></Route>
-            {/* <Route exact path="/login" element={<Login />}></Route>
-            <Route exact path="/signup" element={<SignUp />}></Route> */}
+            <Route exact path="/login" element={<Login />}></Route>
+            <Route exact path="/signup" element={<SignUp />}></Route>
           </Routes>
         </Router>
 
