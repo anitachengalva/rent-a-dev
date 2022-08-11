@@ -1,27 +1,30 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
+// import { useQuery } from '@apollo/client';
 
-import { } from 'semantic-ui-react'
+import { } from 'semantic-ui-react';
+import Snippet from '../components/Snippet/index';
+import DropMenu from '../components/Dropdown/index'
 
-import { } from '../utils/queries';
-import { } from '../utils/mutations';
+// import { QUERY_REQUEST } from '../utils/queries';
+// import { } from '../utils/mutations';
+// import { useQuery } from '@apollo/client';
 
 const Home = () => {
 
     //this was copied _________________________________
     // which mutations will be displayed on the hmepage? 
     // -users snippets, skills dropdown, "welcome <user name>", 
-    const { loading, data } = useQuery(QUERY_THOUGHTS);
-    const thoughts = data?.thoughts || [];
+    // const { loading, data } = useQuery(QUERY_USER, QUERY_REQUEST);
+    // const { loading2, data } = useQuery(QUERY_REQUEST);
+    // const thoughts = data?.thoughts || [];
     // ________________________________________________
 
     return (
         <main>
             <div>
-                <h3>search bar</h3>
-                <h3>dropdown for searchable skills</h3>
-                <h3> here will be the snippets of the devs profiles you can scroll through</h3>
+                <DropMenu></DropMenu>
             </div>
+            <Snippet></Snippet>
         </main>
     );
 };
