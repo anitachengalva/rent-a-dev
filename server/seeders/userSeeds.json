@@ -1,5 +1,7 @@
 [
     {
+      "firstName": "Brian",
+      "lastName": "Kernighan",
       "username": "Brian Kernighan",
       "email": "bkernighan@techfriends.dev",
       "password": "password01",
@@ -7,6 +9,8 @@
       "request": ""
     },
     {
+        "firstName": "Helene",
+        "lastName": "Lowery",
         "username": "Helene Lowery",
         "email": "helenelowery@techfriends.dev",
         "password": "password02",
@@ -14,6 +18,8 @@
         "request": ""
     },
     {
+        "firstName": "Betty",
+        "lastName": "Howell",
         "username": "Betty Howell",
         "email": "bettyhowell@techfriends.dev",
         "password": "password03",
@@ -21,6 +27,8 @@
         "request": ""
     },
     {
+        "firstName": "Mariano",
+        "lastName": "Mullen",
         "username": "Mariano Mullen",
         "email": "marianomullen@techfriends.dev",
         "password": "password04",
@@ -28,6 +36,8 @@
         "request": ""
     },
     {
+        "firstName": "Bryce",
+        "lastName": "Fernandez",
         "username": "Bryce Fernandez",
         "email": "brycefernandez@techfriends.dev",
         "password": "password05",
@@ -35,6 +45,8 @@
         "request": ""
     },
     {
+        "firstName": "Ulysses",
+        "lastName": "Sawyer",
         "username": "Ulysses Sawyer",
         "email": "ulyssessawyer@techfriends.dev",
         "password": "password06",
@@ -42,6 +54,8 @@
         "request": ""
     },
     {
+        "firstName": "Willard",
+        "lastName": "Bridges",
         "username": "Willard Bridges",
         "email": "willardbridges@techfriends.dev",
         "password": "password07",
@@ -49,6 +63,8 @@
         "request": ""
     },
     {
+        "firstName": "Herman",
+        "lastName": "Rogers",
         "username": "Herman Rogers",
         "email": "hermanrogers@techfriends.dev",
         "password": "password08",
@@ -56,6 +72,8 @@
         "request": ""
     },
     {
+        "firstName": "Bobby",
+        "lastName": "Meza",
         "username": "Bobby Meza",
         "email": "bobbymeza@techfriends.dev",
         "password": "password09",
@@ -63,6 +81,8 @@
         "request": ""
     },
     {
+        "firstName": "Vera",
+        "lastName": "Wolfe",
         "username": "Vera Wolfe",
         "email": "verawolfe@techfriends.dev",
         "password": "password10",
