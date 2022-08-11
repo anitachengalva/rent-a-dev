@@ -3,6 +3,7 @@ import React from 'react';
 
 import { } from 'semantic-ui-react';
 import Snippet from '../components/Snippet/index';
+import DropMenu from '../components/Dropdown/index'
 
 // import { QUERY_REQUEST } from '../utils/queries';
 // import { } from '../utils/mutations';
@@ -21,8 +22,7 @@ const Home = () => {
     return (
         <main>
             <div>
-                <h3>dropdown for searchable skills</h3>
-
+                <DropMenu></DropMenu>
             </div>
             <Snippet></Snippet>
         </main>

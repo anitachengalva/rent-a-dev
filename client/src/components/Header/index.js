@@ -19,7 +19,9 @@ function Header() {
                 <Menu.Item>
                     <NavLink to="/signup">Sign Up</NavLink >
                 </Menu.Item>
-                <Menu.Item>Profile</Menu.Item>
+                <Menu.Item>
+                    <NavLink to="/profile">Profile</NavLink >
+                </Menu.Item>
             </Menu>
         </div>
 
