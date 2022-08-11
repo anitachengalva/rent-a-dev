@@ -9,6 +9,8 @@ import Auth from '../utils/auth';
 
 const SignUp = () => {
     const [formState, setFormState] = useState({
+        firstName: '',
+        lastName: '',
         username: '',
         email: '',
         password: '',
@@ -37,6 +39,7 @@ const SignUp = () => {
         } catch (e) {
             console.error(e);
         }
+
     };
 
     return (
@@ -57,14 +60,14 @@ const SignUp = () => {
                                 <Form.Input
                                     //i think Form might be a semanticui thing but maybe it needs ot be formState
                                     value={formState.firstName || ""}
-                                    // onChange={handleChange}
+                                    onChange={handleChange}
                                     name="firstName"
                                     label="First Name" />
                             </Form.Field>
                             <Form.Field>
                                 <Form.Input
                                     value={formState.lastName || ""}
-                                    // onChange={handleChange}
+                                    onChange={handleChange}
                                     name="lastName"
                                     label="Last Name" />
                             </Form.Field>
