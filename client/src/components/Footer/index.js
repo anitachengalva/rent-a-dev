@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+
 export function Footer() {
 	useEffect(() => {
 		const script = document.createElement("script");
@@ -87,3 +88,4 @@ export function Footer() {
 		</footer>
 	);
 }
+
