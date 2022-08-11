@@ -1,11 +1,12 @@
 import { gql } from '@apollo/client';
 
-
 export const ADD_USER = gql`
-  mutation addUser($username: String!, $email: String!, $password: String!) {
+  mutation addUser($firstName: String!, $lastName: String!, $username: String!, $email: String!, $password: String!) {
   addUser(username: $username, email: $email, password: $password) {
     user {
       _id
+      firstName
+      lastName
       username
       email
       password
@@ -16,10 +17,9 @@ export const ADD_USER = gql`
 `;
 //add skills back in
 
-
 export const ADD_LOGIN = gql`
-  mutation createLogin($email: String!, $password: String!) {
-    createLogin(email: $email, password: $password) {
+  mutation login($email: String!, $password: String!) {
+    login(email: $email, password: $password) {
       _id
       email
       password
@@ -28,49 +28,68 @@ export const ADD_LOGIN = gql`
 `;
 
 export const ADD_REQUEST = gql`
-  mutation createRequest($requestText: String!) {
-    createRequest(requestText: $requestText) {
+  mutation addRequest($requestText: String!) {
+  addRequest(requestText: $requestText) {
+    _id
+    requestText
+    requestAuthor
+    createdAt
+    skills {
       _id
+      skillType
     }
   }
+}
 `;
 
 export const ADD_SKILL = gql`
-  mutation createSkill($skillId: ID!, $skillType: String!) {
-    createSkill(skillId: $skillId, skillType: $skillType) {
-      _id
-    }
+  mutation addSkill($skillId: ID!, $skillType: String!) {
+  addSkill(skillId: $skillId, skillType: $skillType) {
+    _id
+    skillType
   }
+}
 `;
 
 export const ADD_USER_SKILL = gql`
-  mutation createUserSkill($userId: ID!, $skillType: String!) {
-    createUserSkill(userId: $userId, skillType: $skillType) {
-      _id
-    }
+  mutation addUserSkill($userId: ID!, $skillType: String!) {
+  addUserSkill(userId: $userId, skillType: $skillType) {
+    _id
+    skillType
   }
+}
 `;
 
 export const REMOVE_REQUEST = gql`
   mutation removeRequest($requestId: ID!) {
-    removeRequest(requestId: $requestId) {
+  removeRequest(requestId: $requestId) {
+    _id
+    requestText
+    requestAuthor
+    createdAt
+    skills {
       _id
+      skillType
     }
   }
+}
+
 `;
 
 export const REMOVE_SKILL = gql`
   mutation removeSkill($skillId: ID!) {
-    removeSkill(skillId: $skillId) {
-      _id
-    }
+  removeSkill(skillId: $skillId) {
+    _id
+    skillType
   }
+}
 `;
 
 export const REMOVE_USER_SKILL = gql`
-  mutation removeUserSkill($userId: ID!, $skillId: String!) {
-    removeUserSkill(userId: $userId, skillId: $skillId) {
-      _id
-    }
+mutation Mutation($userId: ID!, $skillId: String!) {
+  removeUserSkill(userId: $userId, skillId: $skillId) {
+    _id
+    skillType
   }
+}
 `;
