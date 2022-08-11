@@ -19,15 +19,15 @@ const requestSchema = new Schema({
 		default: Date.now,
 		get: (timestamp) => dateFormat(timestamp),
 	},
-	Comments: [
+	comments: [
 		{
-			CommentText: {
+			commentText: {
 				type: String,
 				required: true,
 				minlength: 1,
 				maxlength: 280,
 			},
-			CommentSender: {
+			commentSender: {
 				type: String,
 				required: true,
 			},
@@ -40,6 +40,6 @@ const requestSchema = new Schema({
 	],
 });
 
-const Requests = model("Request", requestSchema);
+const Request = model("Request", requestSchema);
 
-module.exports = Requests;
+module.exports = Request;

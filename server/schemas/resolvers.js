@@ -7,17 +7,17 @@ const resolvers = {
     users: async () => {
       return User.find().populate('skills').select('-password');
     },
-    user: async (parent, { username }) => {
+    user: async (_parent, { username }) => {
       return User.findOne({ username }).populate('skills').select('-password');
     },
-    requests: async (parent, { username }) => {
+    requests: async (_parent, { username }) => {
       const params = username ? { username } : {};
       return Request.find(params).sort({ createdAt: -1 });
     },
-    request: async (parent, { requestId }) => {
+    request: async (_parent, { requestId }) => {
       return Request.findOne({ _id: requestId });
     },
-    me: async (parent, args, context) => {
+    me: async (_parent, args, context) => {
       if (context.user) {
         return User.findOne({ _id: context.user._id }).populate('skills').select('-password');
       }
@@ -26,12 +26,12 @@ const resolvers = {
   },
 
   Mutation: {
-    addUser: async (parent, { username, email, password }) => {
-      const user = await User.create({ username, email, password });
+    addUser: async (_parent, { firstName, lastName, username, email, password }) => {
+      const user = await User.create({ firstName, lastName, username, email, password });
       const token = signToken(user);
       return { token, user };
     },
-    login: async (parent, { email, password }) => {
+    login: async (_parent, { email, password }) => {
       const user = await User.findOne({ email });
 
       if (!user) {
@@ -48,7 +48,7 @@ const resolvers = {
 
       return { token, user };
     },
-    addRequest: async (parent, { requestText }, context) => {
+    addRequest: async (_parent, { requestText }, context) => {
       if (context.user) {
         const request = await Request.create({
           requestText,
@@ -66,7 +66,7 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     // add additional skill requirements to request
-    addSkill: async (parent, { requestId, skillType }, context) => {
+    addSkill: async (_parent, { requestId, skillType }, context) => {
       if (context.user) {
         return Request.findOneAndUpdate(
           { _id: requestId },
@@ -84,7 +84,7 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     // update skill set on user profile
-    addUserSkill: async (parent, { userId, skillType }, context) => {
+    addUserSkill: async (_parent, { userId, skillType }, context) => {
         if (context.user) {
           return User.findOneAndUpdate(
             { _id: userId },
@@ -101,7 +101,7 @@ const resolvers = {
         }
         throw new AuthenticationError('You need to be logged in!');
       },
-    removeRequest: async (parent, { requestId }, context) => {
+    removeRequest: async (_parent, { requestId }, context) => {
       if (context.user) {
         const request = await Request.findOneAndDelete({
           _id: requestId,
@@ -118,7 +118,7 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     // remove skill from request
-    removeSkill: async (parent, { requestId, skillId }, context) => {
+    removeSkill: async (_parent, { requestId, skillId }, context) => {
       if (context.user) {
         return Request.findOneAndUpdate(
           { _id: requestId },
@@ -135,7 +135,7 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     // remove skill from user profile
-    removeUserSkill: async (parent, { userId, skillId }, context) => {
+    removeUserSkill: async (_parent, { userId, skillId }, context) => {
         if (context.user) {
           return User.findOneAndUpdate(
             { _id: userId },
