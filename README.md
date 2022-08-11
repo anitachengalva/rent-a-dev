@@ -3,9 +3,9 @@
 
 ## Description
 
-Description needs to be refined...
+*Rent-A-Dev* is the web developer's one-stop-shop for professional assistance in making the perfect application. Create a free account, login, and make requests for help &mdash; which results in lists of available developers automatically filtered by skills applicable to *your* project. Payscales vary with skills and experience, opening up accessability for any budget. From debugging professional assignments to help initiating personal projects, there exists a developer-for-hire that fits anyone's needs. 
 
-It is a full-stack MERN application ([MongoDB](https://www.mongodb.com/)-[Express.js](https://expressjs.com/)-[React](https://reactjs.org/)-[Node.js](https://nodejs.org/en/)), deployed to [Heroku](https://www.heroku.com/what) with a [MongoDB](https://www.mongodb.com/) database using [MongoDB Atlas](https://www.mongodb.com/atlas/database). It utilizes [GraphQL API](https://graphql.org/learn/) with [Apollo Server](https://www.apollographql.com/docs/apollo-server/).
+Speaking technically, this is a full-stack MERN application ([MongoDB](https://www.mongodb.com/)-[Express.js](https://expressjs.com/)-[React](https://reactjs.org/)-[Node.js](https://nodejs.org/en/)), deployed to [Heroku](https://www.heroku.com/what) with a [MongoDB](https://www.mongodb.com/) database using [MongoDB Atlas](https://www.mongodb.com/atlas/database). It utilizes [GraphQL API](https://graphql.org/learn/) with [Apollo Server](https://www.apollographql.com/docs/apollo-server/).
 
 
 ## Links
