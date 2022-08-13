@@ -17,7 +17,7 @@ function Footer() {
 	return (
 		<footer className="">
 			<div className="">
-				<section className="linkedinPros">
+				<section className="bios">
 					<div
 						className="badge-base LI-profile-badge"
 						data-locale="en_US"
