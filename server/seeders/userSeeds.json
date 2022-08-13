@@ -23,7 +23,7 @@
         "username": "Betty Howell",
         "email": "bettyhowell@techfriends.dev",
         "password": "password03",
-        "skills": ["MongoDB, JavaScript"],
+        "skills": ["MongoDB", "JavaScript"],
         "request": ""
     },
     {
@@ -32,7 +32,7 @@
         "username": "Mariano Mullen",
         "email": "marianomullen@techfriends.dev",
         "password": "password04",
-        "skills": ["CSS, Bootstrap"],
+        "skills": ["CSS", "Bootstrap"],
         "request": ""
     },
     {
@@ -50,7 +50,7 @@
         "username": "Ulysses Sawyer",
         "email": "ulyssessawyer@techfriends.dev",
         "password": "password06",
-        "skills": ["Python, JavaScript, CSS"],
+        "skills": ["JavaScript", "CSS"],
         "request": ""
     },
     {
@@ -59,7 +59,7 @@
         "username": "Willard Bridges",
         "email": "willardbridges@techfriends.dev",
         "password": "password07",
-        "skills": ["C++, C#"],
+        "skills": ["C++", "C#"],
         "request": ""
     },
     {
@@ -68,7 +68,7 @@
         "username": "Herman Rogers",
         "email": "hermanrogers@techfriends.dev",
         "password": "password08",
-        "skills": ["TypeScript, JavaScript"],
+        "skills": ["JavaScript"],
         "request": ""
     },
     {
