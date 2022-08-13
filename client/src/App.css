@@ -37,6 +37,12 @@
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .bios {
   padding-left:19.25%;
   display: flex;
@@ -45,5 +51,5 @@
 
 .badge-base LI-profile-badge {
   display: flex;
-  padding: 20px;
+  margin: 40px;
 }
