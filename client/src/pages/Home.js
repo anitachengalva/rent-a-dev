@@ -49,7 +49,7 @@ const Home = () => {
 			<div>
 				<DropMenu></DropMenu>
 			</div>
-			<Snippet hidden={true} ></Snippet>
+			<Snippet></Snippet>
 		</main>
 	);
 };
